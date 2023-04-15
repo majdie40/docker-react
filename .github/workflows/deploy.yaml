@@ -8,5 +8,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: docker build -t majdie40/docker-react -f Dockerfile.dev
