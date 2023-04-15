@@ -1,0 +1,11 @@
+name: Deploy Frontend
+on:
+  push:
+    branches:
+      - master
+      
+jobs:
+  build:
+    steps:
+      - uses: actions/checkout@v2
+      - run: docker build -t majdie40/docker-react -f Dockerfile.dev
