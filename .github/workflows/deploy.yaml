@@ -10,3 +10,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: docker build -t majdie40/docker-react -f Dockerfile.dev .
+      - run: docker run -e CI=true majdie40/docker-react npm test
